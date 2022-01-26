@@ -28,23 +28,25 @@ const Profile = () => {
   return (
     <>
       <div style={{ padding: 20 }}>
-        <div className="ui search">
-          <div className="ui icon input">
-            <i className="search icon"></i>
+        <div className='ui search'>
+          <div className='ui icon input'>
+            <i className='search icon'></i>
             <input
-              placeholder="search by username"
-              type="text"
+              placeholder='search by username'
+              type='text'
+              data-testid='search '
               value={username}
               onChange={onChangeHandler}
             />
           </div>
 
           <button
-            className="ui primary button"
-            type="submit"
+            data-testid='button '
+            className='ui primary button'
+            type='submit'
             onClick={submitHandler}
           >
-            <i className="github icon"></i>
+            <i className='github icon'></i>
             Search
           </button>
           <DisplayTable data={data} repositories={repositories} />

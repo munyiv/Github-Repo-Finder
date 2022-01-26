@@ -2,7 +2,7 @@ import React from "react";
 
 const DisplayTable = ({ data, repositories }) => {
   return (
-    <table className="ui celled table">
+    <table className='ui celled table'>
       <thead>
         <tr>
           <th>Name</th>
@@ -18,7 +18,7 @@ const DisplayTable = ({ data, repositories }) => {
               " "
             ) : (
               <img
-                className="ui small circular image"
+                className='ui small circular image'
                 src={data.avatar_url}
                 alt={data.avatar_url}
               />
@@ -29,7 +29,7 @@ const DisplayTable = ({ data, repositories }) => {
               <div key={repo.name}>
                 <div>
                   <div>
-                    <a href={repo.html_url} className="header" target="_blank">
+                    <a href={repo.html_url} className='header' target='_blank'>
                       {repo.name}
                     </a>
                   </div>
